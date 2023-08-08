@@ -9,6 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class SimpleAlert {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();

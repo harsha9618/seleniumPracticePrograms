@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class WriteExcelData {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws Exception {
 		
 		FileOutputStream file=new FileOutputStream("E:\\MindQ\\Automation\\seleniumpractice\\testdata\\Data.xlsx");

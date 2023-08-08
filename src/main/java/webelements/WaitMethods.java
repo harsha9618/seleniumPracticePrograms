@@ -1,7 +1,6 @@
 package webelements;
 
-import java.util.concurrent.TimeUnit;
-
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -24,7 +23,7 @@ public class WaitMethods {
 		 * element for that time before throwing an exception.
 		 */
 		
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 		
 		String title=driver.getTitle();
 		if(title.equals(eTitle)) {
